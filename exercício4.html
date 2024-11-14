@@ -1,0 +1,28 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: REMOVER SUV
+    Crie o seguinte array:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    Pergunte ao usuário qual carro deseja REMOVER da lista.
+    Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
+    */
+
+    //ENTRADA
+    let cSUVorigem = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let rSUV = prompt(`Insira o carro Suv que você queira remover da lista:`);
+
+    //PROCESSAMENTO
+    const posicao = cSUV.indexOf(rSUV);
+    if (posicao >= 0) {
+        carrosSUV.splice(posicao, 1)
+        alert(`${cSUVorigem}`);
+        alert(`${cSUV}`);
+    }
+    else {
+        alert(`Esse carro não está na lista`);
+    }
+    //SAÍDA
+
+</script>
